@@ -1,0 +1,22 @@
+.container {
+    display: inline-block;   
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 2rem 0;
+    color: rgb(249 250 251);
+    border-radius: 1rem; 
+    text-transform: uppercase;
+    background-color: rgb(27, 47, 114);
+}
+
+
+.mainH1{
+    display: inline-block;
+    font-size: xx-large;
+    padding-left: 1rem;
+    padding-right: 10rem;
+}
+
+.ptag{
+    font-size: large;
+    padding-left: 1rem;
+}
