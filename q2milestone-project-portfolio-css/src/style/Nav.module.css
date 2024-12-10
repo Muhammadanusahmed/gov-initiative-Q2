@@ -1,0 +1,100 @@
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #0f172a; /* Slate-950 */
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.navbarLogo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem; /* Default for mobile */
+  color: white;
+}
+
+.navbarSubtitle {
+  font-size: 0.75rem; /* Text-xs */
+  font-style: italic;
+  color: #94a3b8; /* Gray-400 */
+}
+
+.navLinks {
+  display: none;
+  gap: 32px;
+  font-weight: 300;
+  font-size: 1.125rem; /* Text-lg */
+  color: white;
+}
+
+.navLink {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: rgba(248, 250, 252, 0.5); /* Slate-100/50 */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.hamburgerIcon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 64px; /* Adjusted for navbar height */
+  left: 0;
+  width: 100%;
+  background-color: #0f172a; /* Slate-950 */
+  color: white;
+  padding: 16px;
+}
+
+.mobileMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 300;
+  font-size: 1.125rem; /* Text-lg */
+}
+
+.myLink{
+  text-decoration: none;
+  /* color: aqua; */
+}
+
+@media screen and (min-width: 1024px) {
+  .navLinks {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}
